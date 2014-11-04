@@ -541,7 +541,7 @@ def script_main(script_name, download):
     -c | --cookies                           Load NetScape's cookies.txt file.
     -o | --output-dir <PATH>                 Set the output directory for downloaded videos.
     -x | --http-proxy <HOST:PORT>            Use specific HTTP proxy for downloading.
-    -l | --limit 1,10 or 10                  Limit of every URL files for downloading, 1 can be skip.
+    -l | --limit 0,10 or 10                  Limit of every URL files for downloading, 0 can be skip.
          --no-proxy                          Don't use any proxy. (ignore $http_proxy)
          --debug                             Show traceback on KeyboardInterrupt.
     '''
