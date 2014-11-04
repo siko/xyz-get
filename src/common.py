@@ -64,6 +64,13 @@ def match1(text, *patterns):
                 ret.append(match.group(1))
         return ret
 
+def str_strip(str,needprint=False):
+
+    if needprint:
+        print(str)
+
+    return str.strip().replace(' ', '-').replace('\n', '')
+
 def parse_query_param(url, param):
     try:
         return parse.parse_qs(parse.urlparse(url).query)[param][0]
@@ -412,7 +419,7 @@ def download_urls(urls, title, ext, total_size, output_dir='.', refer=None, fake
 
     print()
 
-def print_info(site_info, title, type, size ,url):
+def print_info(site_info, title, type, size, url):
     if type:
         type = type.lower()
     if type in ['3gp']:
@@ -613,7 +620,7 @@ def script_main(script_name, download):
             sys.exit(1)
 
 def url_to_module(url):
-    from .ext import ipn
+    from .ext import ipn,teahour
 
     video_host = r1(r'https?://([^/]+)/', url)
     video_url = r1(r'https?://[^/]+(.*)', url)
@@ -627,6 +634,7 @@ def url_to_module(url):
     k = r1(r'([^.]+)', domain)
     downloads = {
         'ipn': ipn,
+        'teahour': teahour,
     }
     if k in downloads:
         return downloads[k], url
