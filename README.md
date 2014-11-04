@@ -33,10 +33,12 @@ usage
         -o | --output-dir <PATH>                 Set the output directory for downloaded videos.
         -x | --http-proxy <HOST:PORT>            Use specific HTTP proxy for downloading.
         -l | --limit 0,10 or 10                  Limit of every URL files for downloading, 0 can be skip.
-            --no-proxy                          Don't use any proxy. (ignore $http_proxy)
-            --debug                             Show traceback on KeyboardInterrupt.
+             --no-proxy                          Don't use any proxy. (ignore $http_proxy)
+             --debug                             Show traceback on KeyboardInterrupt.
     
 
+examples
+========
 
     python3 xyz-get -o /tmp -l 2 http://ipn.li/taiyilaile/
     
