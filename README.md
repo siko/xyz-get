@@ -1,4 +1,6 @@
 xyz-get
 =======
 
-Download tools
+Download tools,now support download from below sites:
+
+* http://ipn.li/itgonglun/
