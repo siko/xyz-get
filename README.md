@@ -41,7 +41,7 @@ usage
 examples
 ========
 
-    python3 xyz-get -o /tmp -l 2 http://ipn.li/taiyilaile/
+    python3 xyz-get -o /tmp -l 1 http://ipn.li/taiyilaile/
     
     Site:		 ipn.li
     Title:		 走进莆田系－－私立医院黑幕大起底（下）
@@ -51,14 +51,7 @@ examples
     
     Downloading 走进莆田系－－私立医院黑幕大起底（下）.mp3 ...
     100.0% ( 39.3/39.3 MB) [========================================] 1/1
-    
-    Site:		 ipn.li
-    Title:		 走进莆田系－－私立医院黑幕大起底（上）
-    Type:		 MP3 (audio/mpeg)
-    Size:		 44.25 MiB (46399018 Bytes)
-    URL:		 http://ipn.li/taiyilaile/6/audio.mp3
-    
-    Skipping /tmp/走进莆田系－－私立医院黑幕大起底（上）.mp3: file already exists
+
     
         
         
